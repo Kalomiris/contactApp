@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ContactApp</string>
+    <string name="delete_contact">DELETE</string>
+    <string name="add_contact">ADD</string>
+    <string name="find">FIND</string>
+    <string name="update">UPDATE</string>
+    <string name="contact_app">CONTACT APP</string>
+
 </resources>

@@ -4,6 +4,8 @@ import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
+import android.widget.TextView;
+
 import com.example.contactapp.com.example.contactapp.model.Contact;
 import java.util.List;
 
