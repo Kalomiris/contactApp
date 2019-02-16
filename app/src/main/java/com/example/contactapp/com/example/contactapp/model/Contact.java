@@ -6,10 +6,12 @@ import android.arch.persistence.room.PrimaryKey;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 
+import java.io.Serializable;
+import java.io.SerializablePermission;
 import java.util.Objects;
 
 @Entity(tableName = "contact_table")
-public class Contact {
+public class Contact implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private Long id;
@@ -30,6 +32,14 @@ public class Contact {
         this.address = address;
         this.email = email;
         this.phone = phone;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {

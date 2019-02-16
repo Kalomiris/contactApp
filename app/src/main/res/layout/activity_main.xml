@@ -7,59 +7,56 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="456dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="30dp"
-        android:text="@string/add_contact"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="395dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClick"
         android:text="@string/delete_contact"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="566dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button5"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="395dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClick"
         android:text="@string/find"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:onClick="onClick"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="438dp" />
 
     <Button
         android:id="@+id/button3"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="395dp"
+        android:layout_width="128dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClick"
         android:text="@string/update"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:ignore="MissingConstraints" />
 
     <android.support.constraint.Group
         android:id="@+id/group"
@@ -82,18 +79,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="129dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
         android:text="@string/contact_app"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="203dp" />
 
 </android.support.constraint.ConstraintLayout>
