@@ -19,7 +19,8 @@ public class Main2Activity extends AppCompatActivity {
 
     Button saveButton, mainMenuButton;
     EditText firstName, lastName, address, email, phone;
-    Functionality service;
+    Functionality service = new Functionality();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

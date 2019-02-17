@@ -1,5 +1,6 @@
 package com.example.contactapp.com.example.contactapp.dao;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
@@ -19,7 +20,7 @@ public interface ContactDao {
     Contact findByEmail(String email);
 
     @Query("SELECT *FROM contact_table WHERE lastname LIKE :lastName")
-    Contact findByName(String lastName);
+    List<Contact> findByName(String lastName);
 
     @Update
     void update(Contact contact);

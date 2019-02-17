@@ -14,7 +14,7 @@ public abstract class ContactDB extends RoomDatabase {
 
     private static volatile ContactDB INSTANCE;
 
-    static ContactDB createDatanbase(final Context context){
+    static ContactDB createDatabase(final Context context){
         if (INSTANCE == null){
             synchronized (ContactDB.class){
                 if (INSTANCE == null){
